@@ -1,0 +1,52 @@
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2vh;
+    width: 100%;
+}
+
+#button-github{
+    font-size: 5vh;
+    max-width: 130px;
+
+    background: transparent;
+    border: none;
+
+    white-space: nowrap;
+}
+
+
+footer{
+    display: flex;
+    justify-content: end;
+
+    position: absolute;
+    top: 90%;
+
+    width: 100%;
+}
+
+#button-fullscreen{
+
+    background: transparent;
+    border: none;
+
+    font-size: 5vh;
+
+    margin-right: 5vh;
+}
+
+@media (pointer:none), (pointer:coarse){
+
+    #button-fullscreen{
+        display: none;
+    }
+
+}
+
+
+
