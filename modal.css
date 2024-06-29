@@ -1,0 +1,165 @@
+
+.modal{
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+    z-index: 100;
+
+    background: #000000;
+    border-radius: 3vh;
+    padding: 0.5em;
+   
+    width: 60vh;
+    min-width: 315px;
+
+    height: 50vh;
+    max-height: 50%;
+
+    overflow-y: auto;
+    
+}
+
+.modal-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+
+}
+
+#modal-content-config{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: start;
+
+    margin: 0 auto;
+    width: 97%;
+}
+
+
+/**********************************/
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out{
+    animation: fadeOut 0.5s forwards;
+}
+
+/**********************************/
+
+.button-close-modal{
+    background: transparent;
+    border: none;
+    font-size: 4vh;
+
+    align-self: flex-end;
+    margin-right: 0.3em;
+    margin-top: 0.4em;
+}
+
+#btn-close-modal i{
+    color: #b3b3b3;
+}
+
+#btn-close-modal i:hover{
+    color: #ffffff;
+}
+
+.config-timer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    margin: 0.5vh 0;
+    width: 100%;
+}
+
+.config-timer label{
+    font-size: 2vh;
+    margin-bottom: 0.1em;
+}
+
+.config-timer input{
+    background: transparent;
+    width: 95%;
+    border: 1px solid #b3b3b3;
+    height: 2.5vh;
+    padding: 0.5em;
+}
+
+.config-timer span{
+    font-size: 1.5vh;
+    margin-top: 0.1em;
+}
+
+/**********************************/
+
+#modal-button-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;        
+    align-items: center;
+    gap: 0.3em;
+
+    
+    width: 98%;
+}
+
+#modal-button-row button{
+    font-size: 2.2vh;
+    background: transparent;
+    border-radius: 4vh;
+    transition: 0.3s;
+    padding: 1em;
+}
+
+#modal-button-reset{
+    border: 1px solid red;
+    color: red;
+}
+
+#modal-button-reset:hover{
+    color: #000000;
+    background-color: red;
+}
+
+#modal-button-save{
+    border: 1px solid #b3b3b3;
+    color: #b3b3b3;
+}
+
+#modal-button-save:hover{
+    color: #000000;
+    background-color: #b3b3b3;
+}
+
+
+

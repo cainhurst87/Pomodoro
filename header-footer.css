@@ -5,6 +5,7 @@ header{
     justify-content: space-between;
     align-items: center;
 
+    margin-top: 0.5em;
     padding: 0 2vh;
     width: 100%;
 }
@@ -12,6 +13,7 @@ header{
 #button-github{
     font-size: 5vh;
     max-width: 130px;
+    margin-right: 4vh;
 
     background: transparent;
     border: none;
@@ -37,7 +39,7 @@ footer{
 
     font-size: 5vh;
 
-    margin-right: 5vh;
+    padding-right: 5vh;
 }
 
 @media (pointer:none), (pointer:coarse){

@@ -1,6 +1,11 @@
 
-html{
-    min-height: 100%;
+html, body{
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 *{
@@ -11,12 +16,51 @@ html{
 }
 
 body{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#container-all{
     display: flex;
     flex-flow: column nowrap;
 
+    height: 100%;
+    width: 100%;
 
-    background: rgb(7,0,119);
-    background: linear-gradient(0deg, rgba(7,0,119,1) 0%, rgba(0,0,0,1) 13%, rgba(0,0,0,1) 100%); 
+    animation: bg-animation 30s infinite alternate;
 }
 
-
+@keyframes bg-animation {
+    0% {
+      background-color: #eeaf61;
+    }
+    20% {
+      background-color: #fb9062;
+    }
+    40% {
+      background-color: #ee5d6c;
+    }
+    60% {
+      background-color: #ce4993;
+    }
+    80% {
+      background-color: #6a0d83;
+    }
+    100% {
+      background-color: #eeaf61;
+    }
+  }
